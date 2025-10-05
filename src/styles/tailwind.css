@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ruby annotation defaults */
+ruby { ruby-position: over; }
+rp { display: none; }
+rt { font-size: 0.7em; color: rgb(203,213,225); }
