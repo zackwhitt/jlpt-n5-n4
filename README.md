@@ -38,3 +38,11 @@ The PWA manifest and service worker are provided by `vite-plugin-pwa`.
 - **Desktop (Chrome/Edge):** address bar → Install icon (or three‑dot menu → **Install app**).
 
 No app store accounts required. Updates are automatic; users get new versions on next visit.
+
+
+## GitHub Pages setup (repo: zackwhitt/jlpt-n5-n4)
+
+Already configured in `vite.config.ts` with `base: "/jlpt-n5-n4/"` and PWA scope.
+- Push to `main` and enable **Settings → Pages → Source: GitHub Actions**.
+- Workflow at `.github/workflows/deploy.yml` builds and publishes automatically.
+- App URL will be: `https://zackwhitt.github.io/jlpt-n5-n4/`

@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { URL } from "node:url";
 
 export default defineConfig({
+  base: "/jlpt-n5-n4/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
@@ -19,14 +20,15 @@ export default defineConfig({
         name: "JLPT N5–N4 Study",
         short_name: "JLPT N5–N4",
         description: "Offline-first study app for Japanese (N5→N4)",
-        start_url: "/",
+        start_url: "/jlpt-n5-n4/",
+        scope: "/jlpt-n5-n4/",
         display: "standalone",
         background_color: "#0b1020",
         theme_color: "#111827",
         icons: [
-          { src: "/icons/pwa-192.png", sizes: "192x192", type: "image/png" },
-          { src: "/icons/pwa-512.png", sizes: "512x512", type: "image/png" },
-          { src: "/icons/maskable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" }
+          { src: "/jlpt-n5-n4/icons/pwa-192.png", sizes: "192x192", type: "image/png" },
+          { src: "/jlpt-n5-n4/icons/pwa-512.png", sizes: "512x512", type: "image/png" },
+          { src: "/jlpt-n5-n4/icons/maskable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" }
         ]
       },
       workbox: {
